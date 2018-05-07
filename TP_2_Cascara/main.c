@@ -37,7 +37,7 @@ int main()
             break;
         case 2:
 
-            printf("Ingrese dni:");
+            printf("Ingrese dni: ");
             scanf("%d", &pedirDni);
 
             bajaPersona(personas, TAM, pedirDni);

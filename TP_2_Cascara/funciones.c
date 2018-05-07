@@ -1,3 +1,18 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct
+{
+    char nombre[20];
+    int edad;
+    int dni;
+    int estado;
+
+} ePersona;
+
+
+
 void inicializarPersonas(ePersona lista[], int tam)
 {
 
@@ -192,7 +207,7 @@ void graficoEdades(ePersona lista[], int tam)
 
     int flagMen;
     int flagEntre;
-    int flagMayo;
+
 
     for (int i=0; i<tam; i++)
     {
@@ -217,7 +232,7 @@ void graficoEdades(ePersona lista[], int tam)
 
         flagMen = 0;
         flagEntre = 0;
-        flagMayo = 0;
+
 
         if(lista[i].estado == 0)
         {
