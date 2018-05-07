@@ -4,7 +4,14 @@
 
 
 
-typedef struct ePersona;
+typedef struct
+{
+    char nombre[20];
+    int edad;
+    int dni;
+    int estado;
+
+} ePersona;
 
 
 

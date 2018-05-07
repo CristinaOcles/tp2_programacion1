@@ -1,15 +1,7 @@
-
 #include <stdio.h>
 #include <stdlib.h>
-
-typedef struct
-{
-    char nombre[20];
-    int edad;
-    int dni;
-    int estado;
-
-} ePersona;
+#include "funciones.h"
+#include <string.h>
 
 
 
@@ -95,7 +87,7 @@ void altaPersonas(ePersona lista[], int tam)
         nuevaPersona.dni = dni;
 
         printf("\n-Ingrese nombre: ");
-        __fpurge(stdin);
+        fflush(stdin);
         gets(nuevaPersona.nombre);
 
         printf("\n-Ingrese Edad: ");
@@ -199,7 +191,7 @@ void ordenarPorNombre(ePersona lista[], int tam)
 void graficoEdades(ePersona lista[], int tam)
 {
     printf("\n----------grafico de edades----------\n");
-    printf("\nmenores de 18 // de 19 a 35 años// mayores de 35 \n" );
+    printf("\nmenores de 18 // de 19 a 35 anios// mayores de 35 \n" );
 
     int menor19=0;
     int entre19y35=0;

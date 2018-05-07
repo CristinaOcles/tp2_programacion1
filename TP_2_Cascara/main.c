@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "funciones.h"
+#include <string.h>
+
 #define TAM 20
 
 
@@ -33,7 +35,8 @@ int main()
         {
         case 1:
             altaPersonas(personas, TAM);
-
+            system("pause");
+            system("cls");
             break;
         case 2:
 
@@ -41,13 +44,19 @@ int main()
             scanf("%d", &pedirDni);
 
             bajaPersona(personas, TAM, pedirDni);
+            system("pause");
+            system("cls");
 
             break;
         case 3:
             ordenarPorNombre(personas, TAM);
+            system("pause");
+            system("cls");
             break;
         case 4:
             graficoEdades(personas, TAM);
+            system("pause");
+            system("cls");
             break;
         case 5:
             seguir = 'n';
