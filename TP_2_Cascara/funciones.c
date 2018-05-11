@@ -193,7 +193,7 @@ void graficoEdades(ePersona lista[], int tam)
     printf("\n----------grafico de edades----------\n");
     printf("\nmenores de 18 // de 19 a 35 anios// mayores de 35 \n" );
 
-    int menor19=0;
+    int menor18=0;
     int entre19y35=0;
     int mayor35=0;
 
@@ -205,7 +205,7 @@ void graficoEdades(ePersona lista[], int tam)
     {
         if (lista[i].edad<19 && lista[i].estado == 0)
         {
-            menor19++;
+            menor18++;
         }
         else if (lista[i].edad >18 && lista[i].edad <36 && lista[i].estado == 0)
         {
@@ -229,7 +229,7 @@ void graficoEdades(ePersona lista[], int tam)
         if(lista[i].estado == 0)
         {
 
-            if (menor19>0)
+            if (menor18>0)
             {
                 printf("*");
             }
@@ -240,7 +240,7 @@ void graficoEdades(ePersona lista[], int tam)
                 entre19y35--;
                 flagEntre = 1;
 
-                menor19--;
+                menor18--;
                 flagMen = 1;
             }
             if (mayor35>0)
@@ -262,7 +262,7 @@ void graficoEdades(ePersona lista[], int tam)
             }
             if (flagEntre==0)
             {
-                menor19--;
+                menor18--;
             }
 
             printf("\n");
